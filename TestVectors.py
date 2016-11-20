@@ -5,6 +5,8 @@ from Level import Level
 
 # basic math
 
+print('Basic math')
+
 print(Vector.__doc__)
 
 first = Vector(1,1,1)
@@ -26,7 +28,7 @@ first.crossProduct(second).print()
 
 (first - second).print()
 
-print('\n')
+print('\nDistances')
 
 # distances
 
@@ -50,12 +52,16 @@ print(l.distanceToLevel(l))
 print(l.distanceToPoint(b))
 print(b.distanceToStraight(s))
 
+print('\nCenter')
+
 # center
 
 d = v.centerOfPolygon([a.toStationaryVector(),b.toStationaryVector()])
 d.print()
 
 d.toPoint().print()
+
+print('\nAngle')
 
 # angle
 
