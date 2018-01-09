@@ -1,7 +1,7 @@
 from Vector import Vector
 from Point import Point
 from Straight import Straight
-from Level import Level
+from Plane import Plane
 
 # basic math
 
@@ -41,14 +41,14 @@ print(s.distanceToPoint(a))
 print(s.distanceToStraight(s))
 
 v2 = Vector(1,1,1)
-l = Level(b,None,v,None,v2)
+l = Plane(b,None,v,None,v2)
 l.print()
 print(l.distanceToPoint(a))
-print(a.distanceToLevel(l))
+print(a.distanceToPlane(l))
 print(a.distanceToPoint(b))
 print(a.distanceToStraight(s))
 
-print(l.distanceToLevel(l))
+print(l.distanceToPlane(l))
 print(l.distanceToPoint(b))
 print(b.distanceToStraight(s))
 

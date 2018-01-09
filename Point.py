@@ -17,7 +17,7 @@ class Point:
 	def distanceToPoint(self,other):
 		return (Vector(self.a, self.b, self.c) - Vector(other.a, other.b, other.c)).norm()
 		
-	def distanceToLevel(self,other):
+	def distanceToPlane(self,other):
 		vector = self.toStationaryVector() - other.stationaryVectorToPoint
 		crossProduct = other.vectorS.crossProduct(other.vectorT)
 		distance = (vector * crossProduct) / crossProduct.norm()
